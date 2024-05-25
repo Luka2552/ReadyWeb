@@ -1,0 +1,208 @@
+.main-container {
+  background-color: #fff;
+  text-align: center;
+  max-width: 100%;
+  background-image: url(../img/bigVector.avif);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+}
+.main-container h2 {
+  color: #202020;
+  font-family: PPTelegraf-Ultrabold;
+  font-size: 15px;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.main-container h1 {
+  font-size: 56px;
+  margin-bottom: 20px;
+  font-family: PPTelegraf-Ultrabold;
+  color: #202020;
+}
+.main-break-h1 {
+  display: none;
+}
+.main-container span {
+  color: #0047ff;
+}
+.main-container h3 {
+  font-size: 15px;
+  line-height: 22.5px;
+  margin: 2rem 0;
+  margin-bottom: 3rem;
+  color: #202020;
+  opacity: 0.6;
+  font-family: PPTelegraf-Regular;
+}
+.main-break-h3v2 {
+  display: none;
+}
+.main-section-category {
+  color: #202020;
+  font-family: PPTelegraf-Regular;
+  font-size: 20px;
+}
+.main-button {
+  background-color: #0047ff;
+  border: none;
+  color: #fff;
+  font-family: PPTelegraf-Ultrabold;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.main-section-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  background-image: url(../img/bigVector.avif);
+  background-color: #f9f9f9;
+}
+.main-section-info-section {
+  background-color: #f0f0f0;
+  padding: 20px;
+  position: relative;
+  margin: 5rem 0 0 0;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  border-radius: 20px;
+}
+.main-section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.main-section-header h2 {
+  margin-top: 1rem;
+}
+.main-section-header .main-section-see-all {
+  text-decoration: underline;
+  color: #0047ff;
+  font-family: PPTelegraf-Regular;
+  font-size: 14px;
+  margin-top: 1rem;
+}
+.main-section-carousel {
+  display: flex;
+  justify-content: center;
+}
+.main-section-images-wrapper {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+  justify-content: center;
+}
+.main-section-carousel-image {
+  width: 100%;
+  max-width: 650px;
+  height: 100%;
+  padding: 1rem;
+  cursor: pointer;
+}
+.main-section-arrows {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+.main-section-arrow {
+  background: 0 0;
+  border: none;
+  cursor: pointer;
+}
+.main-section-arrow img {
+  width: 24px;
+  height: 24px;
+}
+@media only screen and (max-width: 1024px) {
+  .main-container h2 {
+    font-size: 14px;
+  }
+  .main-container h1 {
+    font-size: 2rem;
+    line-height: 44.8px;
+  }
+  .main-break-h1 {
+    display: block;
+  }
+  .main-button {
+    padding: 16px 48px;
+  }
+  .main-container h3 {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  .main-break-h3v2 {
+    display: block;
+  }
+  .main-break-h3 {
+    display: none;
+  }
+  .main-section-images-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-section-carousel-image {
+    margin: 10px 0;
+  }
+}
+.image-container {
+  position: relative;
+  overflow-y: hidden;
+}
+.info-overlay {
+  position: absolute;
+  bottom: 0.31rem;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  height: 16.5%;
+  border-radius: 16px;
+  background-color: #fff;
+  display: none;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: display 0.3s;
+  display: hidden;
+  align-items: center;
+}
+.info-overlay p {
+  left: 2rem;
+  bottom: 1.25rem;
+  font-family: PPTelegraf-Ultrabold;
+  color: #202020;
+  font-weight: 800;
+  font-size: 24px;
+  position: absolute;
+}
+.info-overlay button {
+  position: absolute;
+  right: 13px;
+  bottom: 13px;
+  padding: 16px 16px 11px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 13px;
+  font-family: PPTelegraf-Ultrabold;
+}
+.image-container:hover .info-overlay {
+  display: flex;
+}

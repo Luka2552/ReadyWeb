@@ -1,0 +1,126 @@
+.about-us-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  background-image: url(../img/bigVector.avif);
+  background-color: #f9f9f9;
+}
+.about-us-title {
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 56px;
+  color: #202020;
+  margin: 4rem 0 3rem 0;
+}
+.about-us-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.about-us-text {
+  flex: 1;
+  text-align: left;
+  max-width: 34rem;
+}
+.about-us-paragraph {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: #202020;
+  font-family: PPTelegraf-Regular;
+}
+.about-us-subtitle {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 28.8px;
+  color: #202020;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-family: PPTelegraf-Ultrabold;
+}
+.about-us-image {
+  width: 45%;
+  height: auto;
+  margin-left: 20px;
+}
+.about-us-button {
+  background-color: #0047ff;
+  border: none;
+  color: #fff;
+  font-family: PPTelegraf-Ultrabold;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 2rem 0 4rem 0;
+}
+h2 {
+  font-size: 24px !important;
+}
+.about-us-image-responsive {
+  max-width: 537px;
+  max-height: 256px;
+  margin-bottom: 3rem;
+}
+@media (max-width: 1024px) {
+  .about-us-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main {
+    background-image: url(../img/smallVector.avif);
+  }
+  .about-us-paragraph {
+    text-align: left;
+    max-width: 80%;
+    font-size: 16px;
+  }
+  .about-us-image {
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-us-title {
+    font-size: 1.75rem;
+    max-width: 88%;
+    font-family: PPTelegraf-Ultrabold;
+    margin-bottom: 1rem;
+  }
+  .about-us-image-responsive {
+    display: flex;
+    max-width: 374px;
+    max-height: 258px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+  .test {
+    display: flex;
+    justify-content: center;
+  }
+  .about-us-button {
+    background-color: #0047ff;
+    color: #fff;
+    padding: 16px 15px 16px 15px;
+    width: 23.375rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 2.5rem;
+    font-family: PPTelegraf-Ultrabold;
+  }
+}

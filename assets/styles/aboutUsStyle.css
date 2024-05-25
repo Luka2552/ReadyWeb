@@ -1,0 +1,106 @@
+.about-us-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  background-image: url(../img/bigVector.avif);
+  background-color: #f9f9f9;
+}
+.about-us-title {
+  font-weight: 800;
+  font-size: 2.35rem;
+  line-height: 56px;
+  color: #202020;
+  margin: 4rem 0 3rem 0;
+}
+.about-us-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.about-us-text {
+  flex: 1;
+  text-align: left;
+}
+.about-us-paragraph {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: #202020;
+  font-family: PPTelegraf-Regular;
+}
+.about-us-subtitle {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 28.8px;
+  color: #202020;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-family: PPTelegraf-Ultrabold;
+}
+.about-us-image {
+  width: 45%;
+  height: auto;
+  margin-left: 20px;
+}
+.about-us-button {
+  background-color: #0047ff;
+  border: none;
+  color: #fff;
+  font-family: PPTelegraf-Ultrabold;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 2rem 0 4rem 0;
+}
+@media (max-width: 1024px) {
+  .about-us-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main {
+    background-image: url(../img/smallVector.avif);
+  }
+  .about-us-paragraph {
+    text-align: left;
+    max-width: 80%;
+    font-size: 16px;
+  }
+  .about-us-image {
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-us-title {
+    font-size: 26px;
+    max-width: 88%;
+    font-family: PPTelegraf-Ultrabold;
+    margin-bottom: 1rem;
+  }
+  .about-us-image-responsive {
+    display: flex;
+    width: 374px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 1025px) {
+  .about-us-image-responsive {
+    display: none;
+  }
+}
